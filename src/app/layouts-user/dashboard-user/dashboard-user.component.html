@@ -1,0 +1,35 @@
+<div *ngFor="let cate of category let i = index" [attr.data-index]="i">
+    <div class="margin" *ngIf="i <=1">
+        <div class="row col-md-12">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <h3>{{cate.name}}</h3>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-2"><button class="btn btn-default" routerLink="/Menu" id="btnmuangay">xem thêm tất cả sản
+                    phẩm</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div> 
+        <div>
+            <div class="row form-group">
+                <div class="row col-md-12">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="row col-md-10">
+                        <div class="col-md-3 margin-product" *ngFor="let p of cate.products">
+                            <img [src]="p.image[0].url" height="300px" width="300px"
+                                [routerLink]="['/products-detail',cate._id,p._id]">
+                            <p><b>{{p.name}} </b></p>
+                            <p><b>{{p.price}}đ</b></p>
+                            <p><button class="btn btn-default" id="btnmuangay">MUA
+                                    NGAY</button>
+                                <button class="btn btn-default" id="btnAddToCart" (click)="addToCart(p._id)">+ Giỏ hàng</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

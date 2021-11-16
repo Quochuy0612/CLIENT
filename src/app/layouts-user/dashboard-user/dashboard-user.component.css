@@ -1,0 +1,97 @@
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    a:hover {
+        color: darkred;
+        background-color: lightblue;
+    }
+    .banner img{
+        width: 100%;
+        height: 400px;
+    }
+    h3 {
+        color: darkred;
+        }
+    h2{
+        color: wheat;
+    }
+ 
+    .footer {
+        background-color: azure;
+        color: black;
+        margin-top: 20px;
+    }
+    .SPHT{
+        text-align: center;
+    }
+    #menu {
+        color: darkred;
+    }
+    #thucuong{
+        color: black;
+    }
+    #thucuong:hover{
+        color: darkred;
+        background-color: lightblue;
+    }
+    #allsp{
+        text-decoration: none;
+        background-color: darkred;
+        color: white;
+    }
+    #allsp:hover {
+        color: darkred;
+        background-color: lightblue;
+    }
+    #imgmenu{
+        width: 450px;
+        height: 450px;
+    }
+
+    #btnmuangay{
+        border: solid 2px;
+        border-color: darkred;
+        background-color: darkred;
+        color: white;
+    }
+    #btnmuangay:hover{
+        background-color: rgb(172, 40, 0);
+        color: white;
+    }
+    #btnAddToCart{
+        border: solid 2px;
+        border-color: darkred;
+        background-color: #bd1e1ecf;
+    }
+    #btnAddToCart:hover{
+        background-color: darkred;
+        color: white;
+    }
+
+
+.pading{
+    padding-top: 100px;
+}
+.margin{
+    margin-top: 100px;
+}
+.backgroud{
+    background-image: url('/assets/images/b1.jpg');
+    background-size: 100%;
+    max-width: 1535px;
+    height: 1000px;
+    margin-top: 20px;
+}
+
+img{
+    border-radius: 10px;
+}
+.float{
+    clear: none;
+}
+.margin-product{
+    margin-right: 70px;
+    padding: 0%;
+}

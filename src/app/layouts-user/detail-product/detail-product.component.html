@@ -1,0 +1,53 @@
+<div class="margin">
+    <div class="bg">
+        <div class="row col-md-12" *ngFor="let detail of Product">
+            <div class="col-md-2"></div>
+            <div class="col-md-4" id="img">
+                <img class="img" [src]="detail.image[0].url"/>
+            </div>
+            <div class="col-md-4" id="ttimg">
+                <h3><strong>{{detail.name}}</strong></h3>
+                <P>{{detail.description}}
+                </P>
+                <p>{{detail.price}} đ</p>
+                <p><button class="btn btn-default" id="btnmuangay">MUA NGAY</button></p>
+                <p>Gọi hàng giao tận nơi 18001090</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    
+    <div id="comment">
+        <h3><strong> VỊ TRẦM LẮNG HẢO HẠNG </strong></h3>
+        <P>Cà phê đen bao giờ cũng kén người thưởng thức</P>
+        <div>Không ngọt ngào như bạc xỉu hay cà phê sữa. Cà phê đen mang trong mình
+            phong vị trầm lắng thi vị hơn
+        </div>
+    </div>
+    
+    <div class = "bg">
+        <h3 id="comment"> <strong>BẠN CÓ THỂ THÍCH </strong></h3>
+        <div class="row col-md-12" id = "list">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <img src="assets/images/MACCHIATO.jpg" height="300">
+                <p><b>CÀ PHÊ SỮA</b></p>
+                <p><b>29,000 đ</b></p>
+                <p><button class="btn btn-default" id="btnmuangay">MUA NGAY</button></p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/TRADOACAMSA.jpg" height="300">
+                <p><b>BẠC XỈU</b></p>
+                <p><b>29000 đ</b></p>
+                <p><button class="btn btn-default" id="btnmuangay">MUA NGAY</button></p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/TRANCHAUTRANG.jpg" height="300">
+                <p><b>TRÀ ĐÀO</b></p>
+                <p><b>30,000 đ</b></p>
+                <p><button class="btn btn-default" id="btnmuangay">MUA NGAY</button></p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>

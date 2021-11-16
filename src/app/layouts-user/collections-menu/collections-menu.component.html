@@ -1,0 +1,23 @@
+<div class="container" style="margin-top:50px">
+    <div class="row col-12">
+        <div class="col-4">
+            <div *ngFor="let category of category" (click)="clickProduct(category._id)">
+                <a class="h">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    {{category.name}}
+                </a>
+            </div>
+        </div>
+        <div class="row col-8">
+            <div class="col-4" *ngFor="let product of product">
+                <img [src]="product.image[0].url" height="300" width="300" [routerLink]="['/products-detail',product._id]" />
+                <p><b>{{product.name}}</b></p>
+                <p><b>{{product.price}} đ</b></p>
+                <p><button class="btn btn-default" id="btnmuangay">MUA NGAY</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+{
+    "git.ignoreLimitWarning": true,
+    "appService.defaultWebAppToDeploy": "/subscriptions/5ec38e0a-eea3-4e42-bc2f-60b2acfeefe9/resourceGroups/TheCoffeeStudy/providers/Microsoft.Web/sites/TheCoffeeStudy",
+    "appService.deploySubpath": "."
+}
